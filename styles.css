@@ -1,0 +1,92 @@
+body {
+    display: flex;
+
+    background-color: black;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: xx-large;
+}
+
+.calculatorBody {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    background-color: black;
+    margin: 100px;
+    flex-direction: column;
+}
+
+.display {
+    display: flex;
+    height: 100px;
+    width: 300px;
+    flex: 1 1 auto;
+    flex-direction: column;
+
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    /* 
+    border-color: white;
+    border-style: dashed; */
+}
+
+.displayText {
+    flex: 0 1 0;
+    color: white;
+    margin-bottom: 5px;
+    vertical-align: bottom;
+    font-size: 50px;
+}
+
+.keys {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+    margin: 2px;
+    height: 50px;
+}
+
+.key {
+    flex: 1 1 auto;
+    margin: 2px;
+
+    width: 70px;
+    border-radius: 10px;
+
+    background-color: #6E6E6E;
+    color: white;
+    border: 0;
+    box-shadow: none;
+}
+
+#clear {
+    width: 218px;
+    background-color: white;
+    color: black;
+}
+
+#zero {
+    width: 146px;
+}
+
+.key.operator {
+    background-color: #FFC300;
+    color: white;
+    font-size: 20px;
+}
+
+.key.evaluate {
+    background-color: #FFC300;
+    color: white;
+    font-size: 20px;
+}
